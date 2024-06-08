@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Notes App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script defer="defer" src="bundle.js"></script>
+    <script defer="defer" src="bundle.js"></script>
+  </head>
+  <body>
+    <app-bar></app-bar>
+    <div class="buttons">
+      <button id="showNonArchived">All Notes</button>
+      <button id="showArchived">Archived</button>
+    </div>
+    <div class="container">
+      <div class="notes-container"></div>
+      <note-form></note-form>
+    </div>
+    <div class="loading-indicator"><div class="spinner"></div></div>
+  </body>
+</html>
